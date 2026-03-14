@@ -94,11 +94,11 @@ const MARQUEE_ITEMS = [
 
 // ── COMPONENTS ───────────────────────────────────────────────────────────────
 function Cursor() {
-  const dotRef = useRef(null);
-  const ringRef = useRef(null);
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const move = (e) => {
+    const move = (e: MouseEvent) => {
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
       }
@@ -471,7 +471,7 @@ export default function Home() {
 
       {/* ── CTA FINAL ── */}
       <section id="contato" className="relative py-32 md:py-40 px-6 bg-[#FF6A00] overflow-hidden">
-        <div className="absolute inset-0 bg-grid opacity-20" mixBlendMode="multiply" />
+        <div className="absolute inset-0 bg-grid opacity-20 mix-blend-multiply" />
 
         <div className="relative max-w-4xl mx-auto text-center z-10">
           <h2 className="text-[clamp(2.5rem,8vw,6rem)] font-black leading-[0.85] text-[#050505] tracking-tighter mb-8 reveal">
