@@ -22,6 +22,7 @@ const IconX = () => (
     <path d="M7 7l6 6M13 7l-6 6" stroke="#666" strokeWidth="2" strokeLinecap="round" />
   </svg>
 );
+
 // ── DATA ─────────────────────────────────────────────────────────────────────
 const STATS = [
   { number: '+340%', label: 'aumento médio em conversão' },
@@ -289,7 +290,6 @@ export default function Home() {
           <img
             src="/MATTEO.webp"
             alt="Matteo Posicionamento"
-            /* Ajuste de object-position: foca no centro-topo no mobile, centro no desktop */
             className="absolute inset-0 h-full w-full object-cover object-[center_top] md:object-center opacity-100"
           />
           {/* Sombras suaves apenas nas bordas (menu e rodapé da seção) */}
@@ -302,14 +302,6 @@ export default function Home() {
 
         <div className="max-w-5xl mx-auto px-4 md:px-6 py-20 md:py-32 relative z-10 w-full flex flex-col items-center text-center mt-10 md:mt-0">
 
-          {/* <div className="inline-flex items-center justify-center gap-3 mb-6 md:mb-8 reveal visible">
-            <div className="glass-card px-4 md:px-5 py-2 rounded-full border border-[#FF6A00]/30 backdrop-blur-md">
-              <span className="font-bold text-[9px] md:text-[10px] tracking-widest uppercase text-[#FFDDBA]">
-                <span className="text-[#FF6A00] animate-pulse inline-block mr-2">●</span> POSICIONAMENTO HIGH-TICKET
-              </span>
-            </div>
-          </div> */}
-
           {/* TÍTULO MENOR E RESPONSIVO */}
           <h1 className="text-[clamp(2.25rem,5vw,4.5rem)] font-black leading-[0.9] tracking-tighter mb-6 md:mb-8 max-w-3xl mx-auto drop-shadow-2xl">
             <br /><br />
@@ -319,7 +311,6 @@ export default function Home() {
             <span className="block gradient-text text-glow reveal" style={{ transitionDelay: '0.2s' }}>
               INQUESTIONÁVEL.
             </span>
-
           </h1>
 
           <p className="text-base md:text-lg text-white/90 max-w-2xl leading-relaxed mb-8 md:mb-12 reveal glass-card p-5 md:p-6 rounded-lg border-t-4 border-t-[#FF6A00] mx-auto shadow-2xl" style={{ transitionDelay: '0.4s' }}>
@@ -358,7 +349,7 @@ export default function Home() {
       </div>
 
       {/* ── PROBLEMAS / SOLUÇÕES ── */}
-      <section id='#Resultados' className="py-24 md:py-32 px-6 relative bg-[#050505]">
+      <section id="Resultados" className="py-24 md:py-32 px-6 relative bg-[#050505]">
         <div className="absolute inset-0 bg-grid z-0" />
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-[#FF6A00]/5 blur-[100px] pointer-events-none rounded-full" />
         <div className="max-w-7xl mx-auto relative z-10">
